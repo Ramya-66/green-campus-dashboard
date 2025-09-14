@@ -1,42 +1,56 @@
-**Green Campus Dashboard**
+# Green Campus Dashboard
 
-A Streamlit-based dashboard to monitor and predict sustainability metrics (energy, water,occupancy, etc.) for a green campus initiative. The system integrates real-time IoT data simulation with historical datasets to provide interactive insights and trend predictions.
+## Overview
 
-**File Structure**
+**Green Campus Dashboard** is a project built on the Streamlit platform to visualize, monitor, and analyze sustainability metrics for a campus environment. The system integrates real-time IoT data simulation with historical datasets to provide interactive insights and trend predictions.
 
-    green-campus-dashboard
-  
-      * app.py (Main Streamlit app production version)            
-    
-      *  app-original.py (Backup or reference version of app.py)
-    
-      *  iot_simulator.py (Script to simulate IoT data and update CSV)
-    
-      *  live_data.csv (Real-time or simulated input data file)
-    
-      *  green_campus_dataset.csv (Historical dataset for ML/trends)
-    
-      *  requirements.txt (Python dependencies for Streamlit Cloud)
+## Features
 
-**Running Locally**
+- Interactive dashboards and visualizations
+- Real-time data display (if connected to live data sources)
+- User-friendly interface with Streamlit
+- Modular design for easy expansion
 
-     # Run the simulator to continuously generate data in live_data.csv
-        python iot_simulator.py
-        
-     # Run Streamlit Dashboar
-        streamlit run app.py
+## Getting Started
 
-**Dashboard** (*app.py*)
+### Prerequisites
 
-   - Loads and processes data using pandas.
-   - Visualizes trends with plotly and matplotlib.
-   - Runs ML predictions (e.g., LinearRegression from scikit-learn).
-   - Displays interactive charts and KPIs via Streamlit widgets.
-     
-**Deployment**
-   - All files are version-controlled in GitHub.
-   - Streamlit Cloud automatically redeploys when changes are pushed.
-   - Users access the live dashboard via a public URL.
+- Python 3.7 or higher
+- [Streamlit](https://streamlit.io/) library
+
+### Installation
+
+Clone this repository:
+```bash
+git clone https://github.com/Ramya-66/green-campus-dashboard.git
+cd green-campus-dashboard
+```
+
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### Running the Dashboard
+- To run **predefined csv data** run the Streamlit server as:
+```bash
+streamlit run app.py
+```
+
+- To run **live data** run the Streamlit server as:
+```bash
+python iot_simulator.py
+```  
+
+## Usage
+
+- Open `http://localhost:8501` in your browser after running the app.
+- Explore the dashboard features to view campus sustainability metrics.
 
 
-  
+## Contact
+
+Created by [Ramya-66](https://github.com/Ramya-66).
+
+---
+**Green Campus Dashboard in Streamlit Platform**
