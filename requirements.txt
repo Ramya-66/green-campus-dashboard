@@ -1,6 +1,10 @@
+# Core libraries
 streamlit>=1.25
 pandas>=2.0
 numpy>=1.26
 matplotlib>=3.8
 plotly>=5.18
 rich<14
+
+# Machine Learning
+scikit-learn>=1.3
